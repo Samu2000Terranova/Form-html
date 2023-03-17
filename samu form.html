@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    form{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-top: 10px;
+
+    }
+    form{
+        text-align: center;
+    }
+    fieldset{
+        width:780px;
+        margin-left: 30%;
+        font-variant:initial;
+        border-style: groove;
+        background-color:rgba(234, 223, 203, 0.829);
+        -webkit-border-radius: 8px/7px; 
+        -moz-border-radius: 8px/7px; 
+        border-radius: 8px/7px; 
+        -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        border-color: black;
+        padding:15px;	
+    }
+</style>
+
+    
+<form action="#">
+    <fieldset>
+        <header><img src="https://www.wikitech.it/wp-content/uploads/2019/04/come-riconoscere-siti-falsi-2.png"  class="center"></header>
+<body>
+        <legend > <b>REGISTRAZIONE ABBONAMENTO </b> </legend><div>
+    <br><label for="name"><b>Nome:</b></label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="Cognome"><b>Cognome</b>:</label>
+    <input type="text" id="cognome" Cognome="Cognome" required><br><br>
+
+    <div><label for="age"><b>Età</b>:</label>
+    <input type="number" id="ETA" name="ETA" min="18" max="100" required>
+    <label><b>Data di nascita</b>:
+    <input type="date" name="dateofbirth" min="1990-01-01" max="2027-12-31"></label>
+    <br><br>
+    <label for="NUMERO"><b>Inserisci il tuo numero di cellulare:</b></label><br>
+    <input type="tel" id="NUMERO" cvc="NUMERO" pattern="\d{10}" maxlength="10" required><br><br>
+    
+    </div>
+
+    <br><br>
+    <div>
+    <label for="email"><b>E-mail:</b></label>
+    <input type="email" id="email" email="email" required>
+    
+    <label for="password"><b>Password:</b></label>
+    <input type="password" id="password" password="password" required><br><br>
+    </div>
+    <div>
+    <label for="gender"><b>Genere:</b></label>
+    <input type="radio" id="gender" name="gender" gender="gender_op1">
+    <label for="female">Donna</label>
+    <input type="radio" id="gender" name="gender" gender="gender_op2">
+    <label for="male">Uomo</label>
+    <input type="radio" id="gender" name="gender" gender="gender_op3" checked="checked">
+    <label for="other">Non definito</label><br><br>
+    <label for="termini"> accetti termini e condizioni sul trattamento dei dati.</label>
+    <input type="checkbox"  value="html" checked="checked" id="termini" termini="termini" required><br><br>
+    </div>
+    
+    
+
+
+<div>
+        <b>SELEZIONA UN PIANO </b>
+        <input type="radio" id="abbonamento" name="abbonamento" abbonamento="free" checked="checked">
+        <label for="free">Free</label>
+        <input type="radio" id="abbonamento" name="abbonamento" abbonamento="Piano base">
+        <label for="free">Piano base 10€</label>
+        <input type="radio" id="abbonamento" name="abbonamento" abbonamento="PianoPremiumRed">
+        <label for="free">PianoPremiumRed 50€</label><br>
+        <input type="checkbox" id="pro" name="pro" pro="Pro">
+        <label for="pro">Vuoi abilitare vantaggi <b>PROSuperTRUFFA</b>? Costo aggiuntivo una tantum al mese.</label>
+   
+</div>
+
+<div>
+        <label for="card"><b>Inserisci numero carta di credito:</b></label><br>
+        <input type="ccn" id="card" creditcard="card" required><br><br>
+        <label for="cvc"><b>CVC:</b></label><br>
+        <input type="ccn" id="cvc" cvc="cvc" pattern="\d{3}" maxlength="3" required><br><br>
+        <label for="expiry"><b>Scadenza:</b></label><br>
+        <input maxlength='5' id="expiry" placeholder="MM/YY" type="text" onkeyup="formatString(event);">
+        
+    
+</div>
+
+<div>
+       <br><b>INDIRIZZO per la fattura:</b> <br>
+        <label for="indirizzo"><b>Indirizzo:</b></label>
+        <input type="text" id="indirizzo" indirizzo="indirizzo" required>
+        <label for="civico"><b>Numero Civico:</b></label>
+        <input type="text" id="number" number="number" size="3" ><br><br>
+        <label for="citta"><b>Città:</b></label>
+        <input type="text" id="citta" citta="citta" required>
+        <label for="provincia"><b>Provincia:</b></label>
+        <input type="text" id="provincia" provincia="provincia" size="2" required><br><br>
+        <label for="cap"><b>CAP:</b></label>
+        <input type="text" id="cap" cap="cap" size="2" maxlength="5" required><br><br>
+
+        <input type="submit" value="digita qui per farti fregare i soldi."><br>
+
+</div>
+   </fieldset> </form>
+</body>
